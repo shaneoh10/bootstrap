@@ -4,8 +4,10 @@
       <meta charset="utf-8" />
       <title>Whiskey Drop | Taste a new whiskey every month</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
    </head>
    <body>
       <nav class="navbar navbar-light bg-light navbar-expand-sm">
@@ -41,26 +43,29 @@
             <a href="/login">Sign In / Sign Up</a>
          </div>
       </nav>
-      <article class="container mt-3">
+      <!--<div class="container alert-container">
          <div class="row d-none d-sm-block">
             <div class="col-12">
                <div class="alert alert-warning">
                   <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="#">See here for details!</a>
                </div>
             </div>
-         </div>
-         <!-- Callout -->
+         </div> -->
+      <!-- Callout -->
+      <div class="container-fluid callout-container">
+         <div class="opaque-overlay">&nbsp;</div>
          <div class="row">
             <div class="col-12">
                <section class="callout jumbotron text-center">
-                  <h1>The finest whiskeys delivered to your doorstep.</h1>
+                  <h1 class="jumbotron--header">The finest whiskeys delivered to your doorstep.</h1>
+                  <hr class="block-divider .block-divider--orange">
                   <p class="lead">
                      Sign up today to start receiving the world's best whiskeys every
                      month.<s class="d-none d-sm-inline">€19.99</s>
                      <span class="d-inline d-sm-none"><br /></span>
                      <strong><mark>First one is free!</mark></strong>
                   </p>
-                  <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+                  <button class="btn btn-lg btn--red btn--cta" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
                   <p class="text-muted">
                      <small>
                      You must be over 18 to sign up to our service. Please, drink
@@ -70,8 +75,9 @@
             </div>
          </div>
          <!-- /.callout -->
-         <hr />
-         <!-- Quotes -->
+      </div>
+      <!-- Quotes -->
+      <div class="container quotes-container">
          <section class="quotes">
             <div class="row">
                <div class="col-12 my-5">
@@ -82,7 +88,7 @@
                <div class="col-12 col-md-6">
                   <div class="media">
                      <div class="d-none d-sm-block">
-                        <img src="images/girl-image.png" alt="girl-image" class="rounded-circle mr-3" height="100px" width="100px">
+                        <img src="images/girl-image.png" alt="girl-image" class="rounded-circle mr-3" height="100" width="100">
                      </div>
                      <div class="media-body">
                         <blockquote class="blockquote">
@@ -98,7 +104,7 @@
                <div class="col-12 col-md-6">
                   <div class="media">
                      <div class="d-none d-sm-block">
-                        <img src="images/guy-image.png" alt="guy-image" class="rounded-circle mr-3" height="100px" width="100px">
+                        <img src="images/guy-image.png" alt="guy-image" class="rounded-circle mr-3" height="100" width="100">
                      </div>
                      <div class="media-body">
                         <blockquote class="blockquote">
@@ -113,8 +119,9 @@
             </div>
          </section>
          <!-- /.quotes -->
-         <hr />
-         <!-- Features -->
+      </div>
+      <!-- Features -->
+      <div class="container container-features">
          <section class="features">
             <div class="row">
                <div class="col-12 my-5">
@@ -136,7 +143,7 @@
                </div>
                <div class="col-12 col-md-6 col-lg-4">
                   <div class="feature">
-                     <h3><i class="fas fa-credit-card d-none d-sm-inline"></i>Feature 2</h3>
+                     <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
                      <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -148,7 +155,7 @@
                </div>
                <div class="col-12 d-md-none d-lg-block col-lg-4">
                   <div class="feature">
-                     <h3><i class="fas fa-times-circle d-none d-sm-inline"></i>Feature 3</h3>
+                     <h3><i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
                      <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -161,14 +168,14 @@
             </div>
          </section>
          <!-- /.features -->
-      </article>
+      </div>
       <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
                   <h5 class="modal-title">Sign Up to Whiskey Drop</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+                  <span aria-hidden="true"></span>
                   </button>
                </div>
                <div class="modal-body">
