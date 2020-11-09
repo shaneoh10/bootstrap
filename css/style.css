@@ -1,5 +1,5 @@
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Playfair Display", serif;
 }
 
 .container-wrapper {
@@ -92,6 +92,7 @@ body {
 
 .block-divider--short {
 	width: 35px;
+	margin-bottom: 50px;
 }
 
 /* Content containers */
@@ -149,7 +150,7 @@ body {
 }
 
 .jumbotron small {
-	font-size: 60%;
+	font-size: 75%;
 	font-style: italic;
 	color: #d0d0d0;
 }
